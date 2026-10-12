@@ -1,0 +1,13 @@
+{
+    "name": "eshop",
+    "version": "1.0.0",
+    "description": "Online store for multiples products",
+    "main": "server.js",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "author": "Orome",
+    "license": "ISC"
+}

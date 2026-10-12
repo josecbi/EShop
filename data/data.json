@@ -1,0 +1,128 @@
+[
+    {
+        "images": [
+            "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=900&q=85"
+        ],
+        "imageAlt": "65-inch 4K OLED TV displaying a colorful picture",
+        "description": "4K OLED panel, HDR, low-latency mode, and built-in streaming apps.",
+        "summary": "65-inch display · 4K · Smart TV",
+        "reviews": [],
+        "name": "65-inch 4K OLED TV",
+        "id": "tvs",
+        "productTag": ["tv-video", "deal"],
+        "type": "TV",
+        "currPrice": 1299.99,
+        "brand": null,
+        "maxPrice": 1299.99,
+        "previousPrice": 1599.99,
+        "currency": "USD"
+    },
+    {
+        "images": [
+            "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=900&q=85"
+        ],
+        "imageAlt": "Smartphone Pro with a 6.7-inch OLED display and triple camera",
+        "description": "6.7-inch OLED display, high-resolution camera, and all-day battery life.",
+        "summary": "256 GB · Triple camera",
+        "reviews": [],
+        "name": "Smartphone Pro 256 GB",
+        "id": "phones",
+        "productTag": ["phones", "deal", "bestSeller"],
+        "type": "Smartphone",
+        "currPrice": 999.99,
+        "brand": null,
+        "maxPrice": 999.99,
+        "previousPrice": 1099.99,
+        "currency": "USD"
+    },
+    {
+        "images": [
+            "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?auto=format&fit=crop&w=900&q=85"
+        ],
+        "imageAlt": "Slim gaming console with a wireless controller",
+        "description": "1 TB SSD storage, high-fidelity graphics, and a wireless controller included.",
+        "summary": "1 TB SSD · Wireless controller",
+        "reviews": [],
+        "name": "Slim gaming console",
+        "id": "gaming",
+        "productTag": ["gaming", "deal"],
+        "type": "Gaming console",
+        "currPrice": 449.99,
+        "brand": null,
+        "maxPrice": 449.99,
+        "previousPrice": 499.99,
+        "currency": "USD"
+    },
+    {
+        "images": [
+            "https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&w=900&q=85"
+        ],
+        "imageAlt": "Turquoise retro refrigerator with a top freezer",
+        "description": "Compact retro design with adjustable temperature controls and a top freezer.",
+        "summary": "18 cu. ft. · Turquoise finish · Top freezer",
+        "reviews": [],
+        "name": "18 cu. ft. retro refrigerator",
+        "id": "appliances",
+        "productTag": ["home-appliances", "deal"],
+        "type": "Home appliance",
+        "currPrice": 899.99,
+        "brand": null,
+        "maxPrice": 899.99,
+        "previousPrice": 1099.99,
+        "currency": "USD"
+    },
+    {
+        "images": [
+            "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=85"
+        ],
+        "imageAlt": "13-inch Air laptop open on a desk",
+        "description": "Latest-generation processor, high-resolution display, and a lightweight design for life on the go.",
+        "summary": "16 GB memory · 512 GB SSD",
+        "reviews": [],
+        "name": "13-inch Air laptop",
+        "id": "computing",
+        "productTag": ["computers", "new"],
+        "type": "Laptop",
+        "currPrice": 999.99,
+        "brand": null,
+        "maxPrice": 999.99,
+        "previousPrice": null,
+        "currency": "USD"
+    },
+    {
+        "images": [
+            "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=85"
+        ],
+        "imageAlt": "Pro wireless over-ear headphones",
+        "description": "Active noise cancellation, high-resolution audio, and up to 30 hours of battery life.",
+        "summary": "Noise cancellation · Up to 30 hours of battery life",
+        "reviews": [],
+        "name": "Pro wireless headphones",
+        "id": "headphones",
+        "productTag": ["audio", "deal"],
+        "type": "Headphones",
+        "currPrice": 249.99,
+        "brand": null,
+        "maxPrice": 249.99,
+        "previousPrice": 299.99,
+        "currency": "USD"
+    },
+    {
+        "images": [
+            "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=900&q=85"
+        ],
+        "imageAlt": "27-inch 4K monitor on an adjustable stand",
+        "description": "4K UHD resolution, USB-C connectivity, and an adjustable stand for work or creative projects.",
+        "summary": "27-inch · 4K · USB-C · HDR",
+        "reviews": [],
+        "name": "27-inch 4K monitor",
+        "id": "monitor",
+        "productTag": ["computers", "deal"],
+        "type": "Monitor",
+        "currPrice": 379.99,
+        "brand": null,
+        "maxPrice": 379.99,
+        "previousPrice": 429.99,
+        "currency": "USD"
+    }
+]
