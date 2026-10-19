@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
-        content="Find TVs, smartphones, consoles, computers, and home appliances at NEXO Technology.">
-    <title>NEXO — Technology for everything ahead</title>
+        content="Find TVs, smartphones, consoles, computers, and home appliances at Echop Technology.">
+    <title>Echop — Technology for everything ahead</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,18 +20,42 @@
     </div>
 
     <header class="site-header">
-        <a class="wordmark" href="#home" aria-label="NEXO, home">NEXO<span>.</span></a>
+        <a class="wordmark" href="#home" aria-label="Echop, home">Echop<span>.</span></a>
         <nav class="main-nav" aria-label="Main navigation">
             <a href="#deals">Deals</a>
+            <a href="#best-sellers">Best sellers</a>
             <a href="#tvs">TV &amp; video</a>
             <a href="#phones">Phones</a>
             <a href="#gaming">Gaming</a>
-            <a href="#appliances">Home appliances</a>
+            <a href="#all-products">All products</a>
         </nav>
-        <a class="bag-link" href="#products">Shop <span aria-hidden="true">↗</span></a>
+        <a class="bag-link" href="#all-products">Shop <span aria-hidden="true">↗</span></a>
     </header>
 
     <main>
+        <form class="site-search" id="search-form" role="search">
+            <label class="visually-hidden" for="search-input">Search products</label>
+            <input id="search-input" name="q" type="search" placeholder="Search products, categories, and features"
+                autocomplete="off" maxlength="100" required>
+            <button type="submit">Search <span aria-hidden="true">⌕</span></button>
+        </form>
+
+        <article class="product-page" id="product-page" aria-labelledby="product-page-title" hidden>
+            <div class="section-wrap product-page-main">
+                <a class="text-link product-page-back" href="#all-products"><span aria-hidden="true">←</span> Back to all products</a>
+                <div id="product-page-content"></div>
+            </div>
+            <section class="section-wrap section-alt" aria-labelledby="related-products-title">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow eyebrow-red">Keep shopping</p>
+                        <h2 id="related-products-title">More deals for you</h2>
+                    </div>
+                </div>
+                <div class="product-grid" id="related-products"></div>
+            </section>
+        </article>
+
         <section class="hero" id="home" aria-labelledby="hero-title">
             <img class="hero-image"
                 src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=2000&q=85"
@@ -44,28 +68,66 @@
                     every day a little easier.</p>
                 <a class="button button-light" href="#deals">Shop featured deals <span aria-hidden="true">↗</span></a>
             </div>
-            <p class="hero-caption">NEXO / Your next great find starts here</p>
+            <p class="hero-caption">Echop / Your next great find starts here</p>
         </section>
 
-        <section class="collection section-wrap" id="deals" aria-labelledby="new-title">
+        <section class="collection section-wrap" id="deals" aria-labelledby="deals-title">
             <div class="section-heading">
                 <div>
                     <p class="eyebrow eyebrow-red">Limited-time special pricing</p>
-                    <h2 id="new-title">Great products. Better prices.</h2>
+                    <h2 id="deals-title">Deals of the moment</h2>
                 </div>
-                <a class="text-link" href="#products">Shop all products <span aria-hidden="true">→</span></a>
+                <a class="text-link" href="#all-products">Shop all products <span aria-hidden="true">→</span></a>
             </div>
 
-            <div class="category-nav" aria-label="Product categories">
-                <a class="category-active" href="#products">All</a>
-                <a href="#tvs">TV &amp; video</a>
-                <a href="#phones">Phones</a>
-                <a href="#gaming">Gaming</a>
-                <a href="#appliances">Home appliances</a>
-                <a href="#computing">Computers</a>
+            <div class="product-grid" id="deal-products" aria-live="polite">
+                <p class="products-status" role="status">Loading deals...</p>
+            </div>
+        </section>
+
+        <section class="collection section-wrap section-alt" id="best-sellers" aria-labelledby="best-sellers-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow eyebrow-red">Customer favorites</p>
+                    <h2 id="best-sellers-title">Best sellers</h2>
+                </div>
+                <a class="text-link" href="#all-products">Explore the catalog <span aria-hidden="true">→</span></a>
             </div>
 
-            <div class="product-grid" id="products">
+            <div class="product-grid" id="best-seller-products" aria-live="polite">
+                <p class="products-status" role="status">Loading best sellers...</p>
+            </div>
+        </section>
+
+        <section class="collection section-wrap" id="recent-searches" aria-labelledby="recent-searches-title" hidden>
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow eyebrow-red">Picked from your recent searches</p>
+                    <h2 id="recent-searches-title">Recently searched</h2>
+                </div>
+            </div>
+            <div class="recent-search-terms" id="recent-search-terms" aria-label="Recent searches"></div>
+            <div class="product-grid" id="recent-search-products" aria-live="polite"></div>
+        </section>
+
+        <section class="collection section-wrap section-alt" id="all-products" aria-labelledby="all-products-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow eyebrow-red">Explore the full collection</p>
+                    <h2 id="all-products-title">All products</h2>
+                </div>
+            </div>
+
+            <nav class="category-nav" id="category-nav" aria-label="Product categories">
+                <a class="category-active" href="#all-products" data-category="all">All</a>
+                <a href="#all-products" data-category="tvVideo">TV &amp; video</a>
+                <a href="#all-products" data-category="phones">Phones</a>
+                <a href="#all-products" data-category="gaming">Gaming</a>
+                <a href="#all-products" data-category="homeAppliances">Home appliances</a>
+                <a href="#all-products" data-category="computers">Computers</a>
+            </nav>
+
+            <div class="product-grid" id="products" aria-live="polite">
                 <p class="products-status" role="status">Loading products...</p>
             </div>
         </section>
@@ -80,8 +142,8 @@
                 <h2 id="story-title">The right tech<br>can change<br><em>your day.</em></h2>
                 <p>Compare your favorites, check the specs, and find the right gear for your space, budget, and
                     lifestyle.</p>
-                <a class="text-link" href="#products">Shop products <span aria-hidden="true">→</span></a>
-                <span class="story-mark" aria-hidden="true">N.</span>
+                <a class="text-link" href="#all-products">Shop products <span aria-hidden="true">→</span></a>
+
             </div>
         </section>
 
@@ -109,13 +171,13 @@
     </main>
 
     <footer class="site-footer">
-        <a class="wordmark footer-wordmark" href="#home">NEXO<span>.</span></a>
+        <a class="wordmark footer-wordmark" href="#home">Echop<span>.</span></a>
         <p>Technology for everything ahead.</p>
         <div class="footer-links"><a href="#story">Help</a><a href="#deals">Deals</a>
         </div>
-        <small>© 2026 NEXO Technology</small>
+        <small>© 2026 Echop Technology</small>
     </footer>
+    <script src="index.js" type="module"></script>
 </body>
-<script src="index.js" type="module"></script>
 
 </html>
