@@ -19,27 +19,34 @@
     <div class="announcement">New deals every week <span aria-hidden="true">·</span> Free shipping on select orders
     </div>
 
-    <header class="site-header">
-        <a class="wordmark" href="#home" aria-label="Echop, home">Echop<span>.</span></a>
-        <nav class="main-nav" aria-label="Main navigation">
-            <a href="#deals">Deals</a>
-            <a href="#best-sellers">Best sellers</a>
-            <a href="#tvs">TV &amp; video</a>
-            <a href="#phones">Phones</a>
-            <a href="#gaming">Gaming</a>
-            <a href="#all-products">All products</a>
-        </nav>
-        <a class="bag-link" href="#all-products">Shop <span aria-hidden="true">↗</span></a>
-    </header>
+    <div class="sticky-controls" id="sticky-controls">
+        <header class="site-header">
+            <a class="wordmark" href="#home" aria-label="Echop, home">Echop<span>.</span></a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="#deals">Deals</a>
+                <a href="#best-sellers">Best sellers</a>
+                <a href="#tvs">TV &amp; video</a>
+                <a href="#phones">Phones</a>
+                <a href="#gaming">Gaming</a>
+                <a href="#all-products">All products</a>
+            </nav>
+            <div class="header-actions">
+                <a class="bag-link" href="#all-products">Shop <span aria-hidden="true">↗</span></a>
+                <a class="account-link" href="/auth/login.html">Login <span aria-hidden="true">↗</span></a>
+            </div>
+        </header>
+
+        <div class="search-bar">
+            <form class="site-search" id="search-form" role="search">
+                <label class="visually-hidden" for="search-input">Search products</label>
+                <input id="search-input" name="q" type="search" placeholder="Search products, categories, and features"
+                    autocomplete="off" maxlength="100" required>
+                <button type="submit">Search <span aria-hidden="true">⌕</span></button>
+            </form>
+        </div>
+    </div>
 
     <main>
-        <form class="site-search" id="search-form" role="search">
-            <label class="visually-hidden" for="search-input">Search products</label>
-            <input id="search-input" name="q" type="search" placeholder="Search products, categories, and features"
-                autocomplete="off" maxlength="100" required>
-            <button type="submit">Search <span aria-hidden="true">⌕</span></button>
-        </form>
-
         <article class="product-page" id="product-page" aria-labelledby="product-page-title" hidden>
             <div class="section-wrap product-page-main">
                 <a class="text-link product-page-back" href="#all-products"><span aria-hidden="true">←</span> Back to all products</a>

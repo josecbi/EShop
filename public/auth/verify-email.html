@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Email</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="announcement">New deals every week <span aria-hidden="true">&middot;</span> Free shipping on select orders</div>
+    <header class="auth-header">
+        <a class="wordmark" href="/" aria-label="Echop, home">Echop<span>.</span></a>
+        <a class="back-to-shop" href="/">Back to shop <span aria-hidden="true">&rarr;</span></a>
+    </header>
+    <main class="auth-main">
+        <div class="card">
+            <p class="eyebrow">Echop / Your account</p>
+            <h1>Verify Email</h1>
+
+            <div id="message-container" class="message"></div>
+
+            <p class="form-description">We sent you a verification email. Please check your inbox and click the Verify
+                button in the email to complete your registration.</p>
+
+            <div class="actions secondary-action">
+                <a href="/auth/signup.html" class="signup-link">Back to Signup</a>
+            </div>
+        </div>
+    </main>
+    <script src="verify-email.js" type="module"></script>
+</body>
+
+</html>

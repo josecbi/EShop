@@ -4,6 +4,13 @@ import { openProduct } from "./utils/openProduct.js"
 import { createProductRouter } from "./utils/productRouter.js"
 import { createRecentSearches } from "./utils/recentSearches.js"
 
+const controls = document.querySelector("#sticky-controls")
+const updateControlsHeight = () => {
+    document.documentElement.style.setProperty("--controls-height", `${controls.offsetHeight}px`)
+}
+new ResizeObserver(updateControlsHeight).observe(controls)
+updateControlsHeight()
+
 const recentSearches = createRecentSearches(openProduct)
 const router = createProductRouter(openProduct)
 createCategoryFilter(openProduct)
